@@ -419,3 +419,67 @@ button, a{
     background-color: #1089ff;
 }
 
+.logo-circle {
+    border-radius: 50%; /* Circular logo */
+    border: 2px solid #007bff; /* Optional border */
+    width: 50px; /* Logo width */
+    height: 50px; /* Logo height */
+}
+
+.company-name {
+    font-size: 14px; /* Font size for the company name */
+    color: #fff; /* Text color */
+    text-align: center;
+}
+
+/* Make logo and name responsive */
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .company-name {
+        font-size: 12px; /* Reduce font size for smaller screens */
+    }
+
+    .logo-circle {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.d-inline-block {
+    display: inline-block !important;
+    border-radius: 50%;
+}
+.dropdown-menu {
+    background-color: #343a40; /* Dark background color */
+    border: none; /* Remove border */
+}
+
+.dropdown-item {
+    color: #ffffff; /* White text color */
+}
+
+    .dropdown-item:hover {
+        background-color: #495057; /* Darker background on hover */
+    }
+.hover-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-item {
+    position: relative;
+}
+
